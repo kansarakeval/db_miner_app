@@ -1,10 +1,12 @@
-import 'package:db_miner_app/screen/dash/view/dash_screen.dart';
 import 'package:db_miner_app/screen/detail/view/detail_screen.dart';
+import 'package:db_miner_app/screen/home/view/home_screen.dart';
+import 'package:db_miner_app/screen/quotes%20detail/view/quotes_detail_screen.dart';
 import 'package:db_miner_app/screen/splash/view/splash_scree.dart';
 import 'package:flutter/material.dart';
 
 Map<String,WidgetBuilder> app_routes={
   '/':(context) => const SplashScreen(),
-  'dash':(context) => const DashScreen(),
+  'home':(context) => const HomeScreen(),
   'detail':(context) => const DetailScreen(),
+  'quotesdetail':(context) => const QuotesDetailScreen()
 };

@@ -1,6 +1,7 @@
 class HomeModel{
   int? id;
-  String? name,image,bgImage;
+  String? name,image;
+  List<dynamic>? bgImageList=[];
   List<dynamic>? quotesList=[];
   List<dynamic>? authorList=[];
 
@@ -8,7 +9,7 @@ class HomeModel{
       {this.id,
       this.name,
       this.image,
-      this.bgImage,
+      this.bgImageList,
       this.quotesList,
       this.authorList});
 
@@ -17,7 +18,7 @@ class HomeModel{
       id: m1['id'],
       name: m1['name'],
       image: m1['image'],
-      bgImage: m1['bgImage'],
+      bgImageList: m1['bgImage'],
       quotesList: m1['quotes'],
       authorList: m1['author'],
     );

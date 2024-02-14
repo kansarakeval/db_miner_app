@@ -3,7 +3,18 @@
     "id": 1,
     "name": "Art",
     "image": "assets/img/art.png",
-    "bgImage": "assets/img/art.png",
+    "bgImage": [
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/10.jpg"
+    ],
     "quotes":[
       "Vision is the art of seeing what is invisible to others.",
       "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.",
@@ -33,7 +44,18 @@
     "id": 2,
     "name": "Life",
     "image": "assets/img/life.png",
-    "bgImage": "assets/img/life.png",
+    "bgImage": [
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/10.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/9.jpg"
+    ],
     "quotes":[
       "Every story has an end, but in life every ending is just a new beginning.",
       "Never stop learning, because life never stops teaching.",
@@ -63,7 +85,18 @@
     "id": 3,
     "name": "Car",
     "image": "assets/img/car.png",
-    "bgImage": "assets/img/car.png",
+    "bgImage": [
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/10.jpg"
+    ],
     "quotes":[
       "I spent a lot of money on booze, birds and fast cars. The rest I just squandered.",
       "Self-driving cars are the natural extension of active safety and obviously something we should do.",
@@ -93,7 +126,18 @@
     "id": 4,
     "name": "Dad",
     "image": "assets/img/dad.png",
-    "bgImage": "assets/img/dad.png",
+    "bgImage": [
+      "assets/bgimg/10.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/1.jpg"
+    ],
     "quotes":[
       "When one has not had a good father, one must create one.",
       "A father is a man who expects his son to be as good a man as he meant to be.",
@@ -123,7 +167,18 @@
     "id": 5,
     "name": "Mom",
     "image": "assets/img/mom.png",
-    "bgImage": "assets/img/mom.png",
+    "bgImage": [
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/10.jpg"
+    ],
     "quotes":[
       "will become the Pope.' Instead, I was a painter, and became Picasso.",
       "My mother had a great deal of trouble with me, but I think she enjoyed it.",
@@ -153,7 +208,18 @@
     "id": 6,
     "name": "Music",
     "image": "assets/img/music.png",
-    "bgImage": "assets/img/music.png",
+    "bgImage": [
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/10.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/9.jpg"
+    ],
     "quotes":[
       "One good thing about music, when it hits you, you feel no pain.",
       "Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything.",
@@ -183,7 +249,18 @@
     "id": 7,
     "name": "Pet",
     "image": "assets/img/pet.png",
-    "bgImage": "assets/img/pet.png",
+    "bgImage": [
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/10.jpg"
+    ],
     "quotes":[
       "I am fond of pigs. Dogs look up to us. Cats look down on us. Pigs treat us as equals.",
       "Never wear anything that panics the cat.",
@@ -213,7 +290,18 @@
     "id": 8,
     "name": "God",
     "image": "assets/img/god.png",
-    "bgImage": "assets/img/god.png",
+    "bgImage": [
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/10.jpg",
+      "assets/bgimg/4.jpg"
+    ],
     "quotes":[
       "Coincidence is God's way of remaining anonymous.",
       "Do not let your hearts be troubled. Trust in God; trust also in me.",
@@ -243,7 +331,18 @@
     "id": 9,
     "name": "War",
     "image": "assets/img/war.png",
-    "bgImage": "assets/img/war.png",
+    "bgImage": [
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/10.jpg",
+      "assets/bgimg/1.jpg"
+    ],
     "quotes":[
       "Know thy self, know thy enemy. A thousand battles, a thousand victories.",
       "There is no hunting like the hunting of man, and those who have hunted armed men long enough and liked it, never care for anything else thereafter.",
@@ -273,7 +372,18 @@
     "id": 10,
     "name": "Work",
     "image": "assets/img/work.png",
-    "bgImage": "assets/img/work.png",
+    "bgImage": [
+      "assets/bgimg/3.jpg",
+      "assets/bgimg/6.jpg",
+      "assets/bgimg/9.jpg",
+      "assets/bgimg/2.jpg",
+      "assets/bgimg/5.jpg",
+      "assets/bgimg/8.jpg",
+      "assets/bgimg/1.jpg",
+      "assets/bgimg/4.jpg",
+      "assets/bgimg/7.jpg",
+      "assets/bgimg/10.jpg"
+    ],
     "quotes":[
       "Let the beauty of what you love be what you do.",
       "I put my heart and my soul into my work, and have lost my mind in the process.",

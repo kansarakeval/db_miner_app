@@ -1,6 +1,7 @@
 import 'package:db_miner_app/screen/home/controller/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Quotes",
           style: TextStyle(fontSize: 25),
         ),
@@ -38,8 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   Get.toNamed('detail', arguments: controller.dbList[index]);
                 },
                 child: Container(
-                  padding: EdgeInsets.all(10),
-                  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   height: 135,
                   decoration: BoxDecoration(
                       color: controller.getRandomColor(),
@@ -49,10 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Text(
                         "${controller.dbList[index].name}",
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+                        style: GoogleFonts.philosopher(fontSize: 25,fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Align(
@@ -61,7 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             "${controller.dbList[index].image}",
                             height: 70,
                             fit: BoxFit.cover,
-                          ))
+                          ),
+                      )
                     ],
                   ),
                 ),
