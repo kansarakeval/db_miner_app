@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Art",
+    "image": "assets/img/art.png",
+    "bgImage": "assets/img/art.png",
+    "quotes":[
+      "Vision is the art of seeing what is invisible to others.",
+      "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.",
+      "This world is but a canvas to our imagination.",
+      "The purpose of art is washing the dust of daily life off our souls.",
+      "The essence of all beautiful art, all great art, is gratitude.",
+      "The aim of art is to represent not the outward appearance of things, but their inward significance.",
+      "The true work of art is but a shadow of the divine perfection.",
+      "The greatness of art is not to find what is common but what is unique.",
+      "Culture is the arts elevated to a set of beliefs.",
+      "An artist cannot fail; it is a success to be one."
+    ],
+    "author": [
+      "Jonathan Swift",
+      "Vincent Van Gogh",
+      "Henry David Thoreau",
+      "Pablo Picasso",
+      "Friedrich Nietzsche",
+      "Aristotle",
+      "Michelangelo",
+      "Isaac Bashevis Singer",
+      "Thomas Wolfe",
+      "Charles Horton Cooley"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Life",
+    "image": "assets/img/life.png",
+    "bgImage": "assets/img/life.png",
+    "quotes":[
+      "Every story has an end, but in life every ending is just a new beginning.",
+      "Never stop learning, because life never stops teaching.",
+      "Kill tension before tensions kill you, reach your goal before goal kicks you, live life before life leaves you.",
+      "Life ends when you stop dreaming, hope ends when you stop believing and love ends when you stop caring. So dream hope and love ...Makes Life Beautiful!!!!",
+      "Man that is born of woman hath but a short time to live, and is full of misery. He comet up, and is cut down, like a flower; he fleeth as it were a shadow, and never continueth in one stay.",
+      "Sometimes, it only takes one person to change your life. One to be there for you, to push you, to believe in you. It only takes one.",
+      "No one said life would be easy, they just promised it would get better.",
+      "Life is really simple, but we insist on making it complicated.",
+      "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+      "Life is what happens while you are busy making other plans."
+    ],
+    "author": [
+      "Sholom Aleichem",
+      "Dalai Lama",
+      "Marie Curie",
+      "Buddha",
+      "Lao Tzu",
+      "Eminem",
+      "jackie Robinson",
+      "Confucius",
+      "Buddha",
+      "John Lennon"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Car",
+    "image": "assets/img/car.png",
+    "bgImage": "assets/img/car.png",
+    "quotes":[
+      "I spent a lot of money on booze, birds and fast cars. The rest I just squandered.",
+      "Self-driving cars are the natural extension of active safety and obviously something we should do.",
+      "Everything in life is somewhere else, and you get there in a car.",
+      "It's like driving a car at night. You never see further than your headlights, but you can make the whole trip that way.",
+      "The cars we drive say a lot about us.",
+      "It's a never ending battle of making your cars better and also trying to be better yourself.",
+      "I know a lot about cars, man. I can look at any car's headlights and tell you exactly which way it's coming.",
+      "We aren't addicted to oil, but our cars are.",
+      "Here comes 40. I'm feeling my age and I've ordered the Ferrari. I'm going to get the whole mid-life crisis package.",
+      "In the history of the world, no one has ever washed a rented car."
+    ],
+    "author": [
+      "George Best",
+      "Elon Musk",
+      "E. B. White",
+      "E. L. Doctorow",
+      "Alexandra Paul",
+      "Dale Earnhardt",
+      "Mitch Hedberg",
+      "James Woolsey",
+      "Keanu Reeves",
+      "Lawrence Summers"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dad",
+    "image": "assets/img/dad.png",
+    "bgImage": "assets/img/dad.png",
+    "quotes":[
+      "When one has not had a good father, one must create one.",
+      "A father is a man who expects his son to be as good a man as he meant to be.",
+      "The child is father of the man.",
+      "My father? I never knew him. Never even seen a picture of him.",
+      "It was my father who taught me to value myself. He told me that I was uncommonly beautiful and that I was the most precious thing in his life.",
+      "Undeservedly you will atone for the sins of your fathers.",
+      "When I was 18, I thought my father was pretty dumb. After a while when I got to be 21, I was amazed to find out how much he'd learned in three years.",
+      "All the learnin' my father paid for was a bit o' birch at one end and an alphabet at the other.",
+      "When I come home, my daughter will run to the door and give me a big hug, and everything that's happened that day just melts away.",
+      "Humor is always based on a modicum of truth. Have you ever heard a joke about a father-in-law?"
+    ],
+    "author": [
+      "Friedrich Nietzsche",
+      "Frank A. Clark",
+      "William Wordsworth",
+      "Eminem",
+      "Dawn French",
+      "Horace",
+      "Frank Butler",
+      "George Eliot",
+      "Hugh Jackman",
+      "Dick Clark"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mom",
+    "image": "assets/img/mom.png",
+    "bgImage": "assets/img/mom.png",
+    "quotes":[
+      "will become the Pope.' Instead, I was a painter, and became Picasso.",
+      "My mother had a great deal of trouble with me, but I think she enjoyed it.",
+      "My mother's wonderful. To me she's perfection.",
+      "Having children is my greatest achievement. It was my saviour. It switched my focus from the outside to the inside. My children are gifts, they remind me of what's important.",
+      "My mom taught us the Serenity Prayer at a young age.",
+      "My mother used to tell me man gives the award, God gives the reward. I don't need another plaque.",
+      "The heart of a mother is a deep abyss at the bottom of which you will always find forgiveness.",
+      "Men are what their mothers made them.",
+      "My mother thinks I am the best. And I was raised to always believe what my mother tells me.",
+      "Mothers are fonder than fathers of their children because they are more certain they are their own."
+    ],
+    "author": [
+      "Pablo Picasso",
+      "Mark Twain",
+      "Michael Jackson",
+      "Elle Macpherson",
+      "Toby Keith",
+      "Denzel Washington",
+      "Honore de Balzac",
+      "Ralph Waldo Emerson",
+      "Diego Maradona",
+      "Aristotle"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Music",
+    "image": "assets/img/music.png",
+    "bgImage": "assets/img/music.png",
+    "quotes":[
+      "One good thing about music, when it hits you, you feel no pain.",
+      "Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything.",
+      "Where words fail, music speaks.",
+      "Without music, life would be a mistake.",
+      "I think music in itself is healing. It's an explosive expression of humanity. It's something we are all touched by. No matter what culture we're from, everyone loves music.",
+      "Music expresses that which cannot be said and on which it is impossible to be silent.",
+      "Music doesn't lie. If there is something to be changed in this world, then it can only happen through music.",
+      "Music washes away from the soul the dust of everyday life.",
+      "Music was my refuge. I could crawl into the space between the notes and curl my back to loneliness.",
+      "Music is the strongest form of magic."
+    ],
+    "author": [
+      "Bob Marley",
+      "Plato",
+      "Hans Christian Andersen",
+      "Friedrich Nietzsche",
+      "Billy Joel",
+      "Victor Hugo",
+      "Jimi Hendrix",
+      "Berthold Auerbach",
+      "Maya Angelou",
+      "Marilyn Manson"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pet",
+    "image": "assets/img/pet.png",
+    "bgImage": "assets/img/pet.png",
+    "quotes":[
+      "I am fond of pigs. Dogs look up to us. Cats look down on us. Pigs treat us as equals.",
+      "Never wear anything that panics the cat.",
+      "Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read.",
+      "My little dog - a heartbeat at my feet.",
+      "Until one has loved an animal a part of one's soul remains unawakened.",
+      "The trouble with a kitten is that eventually it becomes a cat.",
+      "Animals are such agreeable friends - they ask no questions; they pass no criticisms.",
+      "There are two means of refuge from the miseries of life: music and cats.",
+      "Animals are reliable, many full of love, true in their affections, predictable in their actions, grateful and loyal. Difficult standards for people to live up to.",
+      "Women and cats will do as they please, and men and dogs should relax and get used to the idea."
+    ],
+    "author": [
+      "Winston Churchill",
+      "P. J. O'Rourke",
+      "Groucho Marx",
+      "Edith Wharton",
+      "Anatole France",
+      "Ogden Nash",
+      "George Eliot",
+      "Albert Schweitzer",
+      "Alfred A. Montapert",
+      "Robert A. Heinlein"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "God",
+    "image": "assets/img/god.png",
+    "bgImage": "assets/img/god.png",
+    "quotes":[
+      "Coincidence is God's way of remaining anonymous.",
+      "Do not let your hearts be troubled. Trust in God; trust also in me.",
+      "Sir, my concern is not whether God is on our side; my greatest concern is to be on God's side, for God is always right.",
+      "There are two kinds of people: those who say to God, 'Thy will be done,' and those to whom God says, 'All right, then, have it your way.'",
+      "Our heavenly Father understands our disappointment, suffering, pain, fear, and doubt. He is always there to encourage our hearts and help us understand that He's sufficient for all of our needs. When I accepted this as an absolute truth in my life, I found that my worrying stopped.",
+      "God gave you a gift of 86,400 seconds today. Have you used one to say 'thank you?'",
+      "We need to find God, and he cannot be found in noise and restlessness. God is the friend of silence. See how nature - trees, flowers, grass- grows in silence; see the stars, the moon and the sun, how they move in silence... We need silence to be able to touch souls.",
+      "God has entrusted me with myself.",
+      "God has given us two hands, one to receive with and the other to give with.",
+      "Life is God's novel. Let him write it."
+    ],
+    "author": [
+      "Albert Einstein",
+      "Jesus Christ",
+      "Abraham Lincoln",
+      "C. S. Lewis",
+      "Charles Stanley",
+      "William Arthur Ward",
+      "Mother Teresa",
+      "Epictetus",
+      "Billy Graham",
+      "Isaac Bashevis Singer"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "War",
+    "image": "assets/img/war.png",
+    "bgImage": "assets/img/war.png",
+    "quotes":[
+      "Know thy self, know thy enemy. A thousand battles, a thousand victories.",
+      "There is no hunting like the hunting of man, and those who have hunted armed men long enough and liked it, never care for anything else thereafter.",
+      "The object of war is not to die for your country but to make the other bastard die for his.",
+      "I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.",
+      "Only the dead have seen the end of the war.",
+      "The more you sweat in peace, the less you bleed in war.",
+      "We shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender.",
+      "War does not determine who is right - only who is left.",
+      "It is well that war is so terrible, otherwise we should grow too fond of it.",
+      "Older men declare war. But it is the youth that must fight and die."
+    ],
+    "author": [
+      "Sun Tzu",
+      "Ernest Hemingway",
+      "George S. Patton",
+      "Albert Einstein",
+      "George Santayana",
+      "Norman Schwarzkopf",
+      "Winston Churchill",
+      "Bertrand Russell",
+      "Robert E. Lee",
+      "Herbert Hoover"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Work",
+    "image": "assets/img/work.png",
+    "bgImage": "assets/img/work.png",
+    "quotes":[
+      "Let the beauty of what you love be what you do.",
+      "I put my heart and my soul into my work, and have lost my mind in the process.",
+      "Find a job you like and you add five days to every week.",
+      "When your work speaks for itself, don't interrupt.",
+      "Far and away the best prize that life has to offer is the chance to work hard at work worth doing.",
+      "Nothing will work unless you do.",
+      "The beginning is the most important part of the work.",
+      "The reward for work well done is the opportunity to do more.",
+      "All things are difficult before they are easy.",
+      "Be regular and orderly in your life, so that you may be violent and original in your work."
+    ],
+    "author": [
+      "Rumi",
+      "Vincent Van Gogh",
+      "H. Jackson Brown, Jr.",
+      "Henry J. Kaiser",
+      "Theodore Roosevelt",
+      "Maya Angelou",
+      "Plato",
+      "Jonas Salk",
+      "Thomas Fuller",
+      "Gustave Flaubert"
+    ]
+  }
+]
