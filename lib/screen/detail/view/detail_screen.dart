@@ -28,7 +28,8 @@ class _DetailScreenState extends State<DetailScreen> {
                 Get.toNamed('quotesdetail', arguments: [
                   model.bgImageList![index],
                   model.quotesList![index],
-                  model.authorList![index]
+                  model.authorList![index],
+                  model.name![index],
                 ]);
               },
               child: Container(

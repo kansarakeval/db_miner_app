@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:db_miner_app/screen/home/model/home_model.dart';
 import 'package:db_miner_app/utils/color.dart';
 import 'package:db_miner_app/utils/json_hlper.dart';

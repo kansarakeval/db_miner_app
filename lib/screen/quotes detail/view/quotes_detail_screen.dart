@@ -1,3 +1,7 @@
+import 'package:db_miner_app/screen/home/controller/home_controller.dart';
+import 'package:db_miner_app/screen/like/controller/like_controller.dart';
+import 'package:db_miner_app/screen/modele/db_model.dart';
+import 'package:db_miner_app/utils/db_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,6 +16,12 @@ class QuotesDetailScreen extends StatefulWidget {
 
 class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
   List m1 = Get.arguments as List;
+  LikeController controller=Get.put(LikeController());
+  @override
+  void initState() {
+    super.initState();
+    controller.likegetData();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +37,24 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                   child: Row(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          DBModel dbmodel= DBModel(
+                            name: m1[3],author: m1[2],quotes: m1[1]
+                          );
+                          DbHelper.helper.insertQuotesData(dbmodel);
+                          Get.back();
+                          controller.likegetData();
+                        },
                         icon: const Icon(Icons.favorite),
                       ),
-                      const Text(
-                        "like",
-                        style: TextStyle(fontSize: 15),
+                      InkWell(
+                        onTap: () {
+                          Get.toNamed('like');
+                        },
+                        child: const Text(
+                          "like",
+                          style: TextStyle(fontSize: 15),
+                        ),
                       )
                     ],
                   ),
