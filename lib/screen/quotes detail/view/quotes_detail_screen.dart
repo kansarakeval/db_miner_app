@@ -2,6 +2,7 @@ import 'package:db_miner_app/screen/home/controller/home_controller.dart';
 import 'package:db_miner_app/screen/like/controller/like_controller.dart';
 import 'package:db_miner_app/screen/modele/db_model.dart';
 import 'package:db_miner_app/utils/db_helper.dart';
+import 'package:db_miner_app/utils/share_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,7 +17,9 @@ class QuotesDetailScreen extends StatefulWidget {
 
 class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
   List m1 = Get.arguments as List;
-  LikeController controller=Get.put(LikeController());
+  LikeController controller = Get.put(LikeController());
+  HomeController homeController = Get.put(HomeController());
+
   @override
   void initState() {
     super.initState();
@@ -38,9 +41,8 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                     children: [
                       IconButton(
                         onPressed: () {
-                          DBModel dbmodel= DBModel(
-                            name: m1[3],author: m1[2],quotes: m1[1]
-                          );
+                          DBModel dbmodel = DBModel(
+                              name: m1[3], author: m1[2], quotes: m1[1]);
                           DbHelper.helper.insertQuotesData(dbmodel);
                           Get.back();
                           controller.likegetData();
@@ -62,9 +64,15 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                 PopupMenuItem(
                   child: Row(
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.nightlight),
+                      Obx(
+                        ()=> Switch(
+                          value: homeController.islight.value,
+                          onChanged: (value) {
+                            ShareHelper shr = ShareHelper();
+                            shr.setTheme(value);
+                            homeController.changeTheme();
+                          },
+                        ),
                       ),
                       const Text(
                         "time",
@@ -95,10 +103,11 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                   SizedBox(
                     width: 400,
                     child: AnimatedTextKit(
-                      animatedTexts:[
+                      animatedTexts: [
                         TypewriterAnimatedText(
                           "${m1[1]}",
-                          textStyle: GoogleFonts.philosopher(fontSize: 30, fontWeight: FontWeight.bold),
+                          textStyle: GoogleFonts.philosopher(
+                              fontSize: 30, fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                           speed: const Duration(milliseconds: 100),
                         ),
