@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:db_miner_app/screen/modele/db_model.dart';
+import 'package:db_miner_app/model/db_model.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';

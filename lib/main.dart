@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 void main(){
   HomeController controller=Get.put(HomeController());
+  controller.changeTheme();
   runApp(
     Obx(
       () => GetMaterialApp(

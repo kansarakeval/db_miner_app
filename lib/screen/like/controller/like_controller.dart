@@ -1,4 +1,4 @@
-import 'package:db_miner_app/screen/modele/db_model.dart';
+import 'package:db_miner_app/model/db_model.dart';
 import 'package:db_miner_app/utils/db_helper.dart';
 import 'package:get/get.dart';
 

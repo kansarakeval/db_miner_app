@@ -1,12 +1,12 @@
+import 'package:async_wallpaper/async_wallpaper.dart';
+import 'package:db_miner_app/model/db_model.dart';
 import 'package:db_miner_app/screen/home/controller/home_controller.dart';
 import 'package:db_miner_app/screen/like/controller/like_controller.dart';
-import 'package:db_miner_app/screen/modele/db_model.dart';
 import 'package:db_miner_app/utils/db_helper.dart';
 import 'package:db_miner_app/utils/share_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class QuotesDetailScreen extends StatefulWidget {
   const QuotesDetailScreen({Key? key}) : super(key: key);
@@ -33,6 +33,11 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
         title: const Text("Quotes"),
         centerTitle: true,
         actions: [
+          IconButton(
+              onPressed: () {
+                Get.toNamed('like');
+              },
+              icon: Icon(Icons.save)),
           PopupMenuButton(
             itemBuilder: (context) {
               return [
@@ -49,14 +54,9 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                         },
                         icon: const Icon(Icons.favorite),
                       ),
-                      InkWell(
-                        onTap: () {
-                          Get.toNamed('like');
-                        },
-                        child: const Text(
-                          "like",
-                          style: TextStyle(fontSize: 15),
-                        ),
+                      const Text(
+                        "like",
+                        style: TextStyle(fontSize: 15),
                       )
                     ],
                   ),
@@ -65,7 +65,7 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                   child: Row(
                     children: [
                       Obx(
-                        ()=> Switch(
+                        () => Switch(
                           value: homeController.islight.value,
                           onChanged: (value) {
                             ShareHelper shr = ShareHelper();
@@ -76,6 +76,45 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                       ),
                       const Text(
                         "time",
+                        style: TextStyle(fontSize: 15),
+                      )
+                    ],
+                  ),
+                ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          homeController.copy(m1[1]);
+                          Get.back();
+                          Get.snackbar('copy to quotes', 'Success!');
+                        },
+                        icon: const Icon(Icons.copy),
+                      ),
+                      const Text(
+                        "copy",
+                        style: TextStyle(fontSize: 15),
+                      )
+                    ],
+                  ),
+                ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () async {
+                          await AsyncWallpaper.setWallpaper(
+                              url: m1[0],
+                              wallpaperLocation: AsyncWallpaper.HOME_SCREEN,
+                              goToHome: true,
+                              toastDetails: ToastDetails.error(),
+                              errorToastDetails: ToastDetails.error());
+                        },
+                        icon: const Icon(Icons.wallpaper),
+                      ),
+                      const Text(
+                        "Wallpaper",
                         style: TextStyle(fontSize: 15),
                       )
                     ],
@@ -100,19 +139,12 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: 400,
-                    child: AnimatedTextKit(
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                          "${m1[1]}",
-                          textStyle: GoogleFonts.philosopher(
-                              fontSize: 30, fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                          speed: const Duration(milliseconds: 100),
-                        ),
-                      ],
-                    ),
+                  Text(
+                    "${m1[1]}",
+                    style: GoogleFonts.philosopher(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
                   ),
                   const SizedBox(
                     height: 20,
@@ -121,7 +153,8 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       "- ${m1[2]}",
-                      style: GoogleFonts.philosopher(fontSize: 25),
+                      style: GoogleFonts.philosopher(
+                          fontSize: 25, color: Colors.black),
                     ),
                   ),
                 ],

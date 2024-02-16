@@ -24,23 +24,11 @@ class _SplashScreenState extends State<SplashScreen> {
     return SafeArea(
       child: Scaffold(
           body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              "assets/img/logo.jpg",
-              height: 150,
+        child: Image.asset(
+              "assets/img/logo2.png",
+              height: 250,
               fit: BoxFit.cover,
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            const Text(
-              "DB Miner",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
       )),
     );
   }

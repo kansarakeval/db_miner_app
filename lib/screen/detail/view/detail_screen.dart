@@ -29,7 +29,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   model.bgImageList![index],
                   model.quotesList![index],
                   model.authorList![index],
-                  model.name![index],
+                  model.name,
                 ]);
               },
               child: Container(
@@ -58,7 +58,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             width: 400,
                             child: Text(
                               "${model.quotesList![index]}",
-                              style: GoogleFonts.philosopher(fontSize: 25,fontWeight: FontWeight.bold),
+                              style: GoogleFonts.philosopher(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),
                               overflow: TextOverflow.clip,
                               maxLines: 2,
                             ),
@@ -68,7 +68,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               alignment: Alignment.centerRight,
                               child: Text(
                                 "- ${model.authorList![index]}",
-                                style: GoogleFonts.philosopher(fontSize: 20),
+                                style: GoogleFonts.philosopher(fontSize: 20,color: Colors.black),
                               )),
                         ],
                       ),

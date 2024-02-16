@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:db_miner_app/screen/home/model/home_model.dart';
 import 'package:db_miner_app/utils/color.dart';
 import 'package:db_miner_app/utils/json_hlper.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../utils/share_helper.dart';
 
@@ -26,4 +27,9 @@ class HomeController extends GetxController{
     bool? istheme = await shr.getTheme();
     islight.value = istheme ?? false;
   }
+
+  //copy
+void copy(String quotes){
+    Clipboard.setData(ClipboardData(text: quotes));
+}
 }
