@@ -23,13 +23,14 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          body: Center(
-        child: Image.asset(
-              "assets/img/logo2.png",
-              height: 250,
-              fit: BoxFit.cover,
-            ),
-      )),
+        body: Center(
+          child: Image.asset(
+            "assets/img/logo2.png",
+            height: 250,
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
     );
   }
 }

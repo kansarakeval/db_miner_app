@@ -31,8 +31,11 @@ class DbHelper {
             "CREATE TABLE quotes(id INTEGER PRIMARY KEY AUTOINCREMENT, quotes TEXT,author TEXT,name Text)";
         String queryNameTable =
             "CREATE TABLE name(id INTEGER PRIMARY KEY AUTOINCREMENT,quotes TEXT,author TEXT,name Text)";
+        String queryCategoryTable =
+            "CREATE TABLE category(id INTEGER PRIMARY KEY AUTOINCREMENT,name Text)";
         db.execute(queryQuotesTable);
         db.execute(queryNameTable);
+        db.execute(queryCategoryTable);
       },
     );
   }
@@ -47,10 +50,47 @@ class DbHelper {
     });
   }
 
+
+  //insertName
+  Future<void> insertNameData(DBModel dbModel) async {
+    database = await checkDB();
+    database!.insert("name", {
+      "quotes": dbModel.quotes,
+      "author": dbModel.author,
+      "name": dbModel.name
+    });
+  }
+
+  //insertCategory
+  Future<void> insertCategoryData(String name) async {
+    database = await checkDB();
+    database!.insert("category", {
+      "name": name
+    });
+  }
+
   //readQuotes
-  Future<List<DBModel>> redQuotesData() async {
+  Future<List<DBModel>> readQuotesData() async {
     database = await checkDB();
     String query = "SELECT * FROM quotes";
+    List<Map> data = await database!.rawQuery(query, null);
+    List<DBModel> modelList = data.map((e) => DBModel.mapToModel(e)).toList();
+    return modelList;
+  }
+
+  //redName
+  Future<List<DBModel>> readNameData() async {
+    database = await checkDB();
+    String query = "SELECT * FROM name";
+    List<Map> data = await database!.rawQuery(query, null);
+    List<DBModel> modelList = data.map((e) => DBModel.mapToModel(e)).toList();
+    return modelList;
+  }
+
+  //redCategory
+  Future<List<DBModel>> readCategoryData() async {
+    database = await checkDB();
+    String query = "SELECT * FROM category";
     List<Map> data = await database!.rawQuery(query, null);
     List<DBModel> modelList = data.map((e) => DBModel.mapToModel(e)).toList();
     return modelList;
@@ -59,6 +99,14 @@ class DbHelper {
   //deleteQuotes
   Future<void> deleteQuotesData({required String id}) async {
     database = await checkDB();
-    database!.delete("quotes",where: "id=?",whereArgs: [id]);
+    database!.delete("quotes", where: "id=?", whereArgs: [id]);
+  }
+
+  //deleteCategoryData
+  Future<void> deleteCategoryData({required String id}) async {
+    database = await checkDB();
+    database!.delete("category", where: "id=?", whereArgs: [id]);
   }
 }
+
+

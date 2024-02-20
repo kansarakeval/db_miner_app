@@ -1,4 +1,5 @@
 import 'package:db_miner_app/screen/detail/view/detail_screen.dart';
+import 'package:db_miner_app/screen/favorite%20category/view/favorit_category_screen.dart';
 import 'package:db_miner_app/screen/home/view/home_screen.dart';
 import 'package:db_miner_app/screen/like/view/like_Screen.dart';
 import 'package:db_miner_app/screen/quotes%20detail/view/quotes_detail_screen.dart';
@@ -11,4 +12,5 @@ Map<String,WidgetBuilder> app_routes={
   'detail':(context) => const DetailScreen(),
   'quotesdetail':(context) => const QuotesDetailScreen(),
   'like': (context) => const LikeScreen(),
+  'favoritcategory': (context) => const FavoritCategoryScreen(),
 };

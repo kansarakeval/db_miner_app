@@ -6,7 +6,7 @@ class LikeController extends GetxController{
   RxList<DBModel> likeList = <DBModel>[].obs;
 
   Future<void> likegetData()async{
-    List<DBModel> like = await DbHelper.helper.redQuotesData();
+    List<DBModel> like = await DbHelper.helper.readQuotesData();
     likeList.value = like;
   }
 }
